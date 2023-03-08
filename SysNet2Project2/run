@@ -1,0 +1,11 @@
+#!/bin/bash
+
+echo "make main"
+make main
+
+echo "run server"
+./main
+
+#echo "run client"
+#./client
+
