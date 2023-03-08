@@ -18,6 +18,7 @@
 #include <unistd.h>
 
 #define SERVER_PORT 60012
+#define SERVER_ADDRESS 
 
 #define MAX_BUFF_SIZE 1024
 
