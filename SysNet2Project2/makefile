@@ -1,7 +1,7 @@
 CXX = g++
 CXXFLAGS = -std=c++11 -g -Wall
 
-OBJECTS = main.o httpserver.o actionhandler.o
+OBJECTS = main.o httpserver.o actionhandler.o client.o
 
 #tcpServer3: $(OBJECTS)
 #	$(CXX) $(CXXFLAGS) -o $@ $^
