@@ -9,9 +9,9 @@ OBJECTS = main.o httpserver.o actionhandler.o
 main: $(OBJECTS) #main.cpp tcpServer3.c
 	$(CXX) $(CXXFLAGS) -o $@ $^
 
-client: client.o
+httpclient: httpclient.o
 	$(CXX) $(CXXFLAGS) -o $@ $^
 
 clean:
 #	$(RM) *.o tcpServer3
-	$(RM) *.o main
+	$(RM) *.o main httpclient
