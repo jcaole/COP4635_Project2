@@ -8,7 +8,7 @@
 
 #include "httpclient.hpp"
 
-void run_http_client();
+void runHttpClient();
 
 char SERVER_ADDRESS[MAX_BUFF_SIZE];
 
@@ -29,7 +29,7 @@ char REQUEST_TEMPLATE[MAX_BUFF_SIZE] =
 int main() {
 	setServerAddress();
 	while (1) {
-		run_http_client();
+		runHttpClient();
 	}
 	return 0;
 }
