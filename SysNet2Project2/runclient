@@ -1,0 +1,8 @@
+#!/bin/bash
+
+echo "make httpclient"
+make httpclient
+
+echo "run client"
+./httpclient
+

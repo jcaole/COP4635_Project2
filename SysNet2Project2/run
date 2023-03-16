@@ -3,9 +3,12 @@
 echo "make main"
 make main
 
+#echo "make httpclient"
+#make httpclient
+
 echo "run server"
 ./main
 
-#echo "run client"
-#./client
+#echo "run httpclient"
+#./httpclient
 
