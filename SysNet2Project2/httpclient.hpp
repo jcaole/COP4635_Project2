@@ -5,9 +5,8 @@
  * Description:
  */
 
-
-#ifndef HTTP_CLIENT_H
-#define HTTP_CLIENT_H
+#ifndef HTTP_CLIENT_H_
+#define HTTP_CLIENT_H_
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -19,11 +18,13 @@
 #define MAX_BUFF_SIZE 1024
 #define SERVER_PORT 80
 
-void run_http_client();
+void runHttpClient();
 
-void set_server_address();
+void setServerAddress();
 
-#endif
+int main();
+
+#endif /* HTTP_CLIENT_H_ */
 
 /*#include <iostream>
 #include <string.h>
