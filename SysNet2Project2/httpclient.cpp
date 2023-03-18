@@ -1,8 +1,9 @@
-/* File Name:
- * Course:
- * Project:
- * Author:
- * Description:
+/* File Name:	httpclient.cpp
+ * Course:	COP4635
+ * Project:	2
+ * Author:	Jeremy Caole Kevin Teague
+ * Description:	httpclient connects to remote server over TCP/IP, sends GET requests to 
+ * 		retreive user specified files.
  */
 
 
@@ -12,6 +13,9 @@ void runHttpClient();
 
 char SERVER_ADDRESS[MAX_BUFF_SIZE];
 
+/*
+ * ask for user input for server address, 127.0.0.1
+ */
 void setServerAddress() {
 	printf("Please enter the server address: ");
 	scanf("%s", SERVER_ADDRESS);
@@ -34,6 +38,9 @@ int main() {
 	return 0;
 }
 
+/*
+ * core method 
+ */
 void runHttpClient() {
 	char filename[MAX_BUFF_SIZE];
 	char request[MAX_BUFF_SIZE];

@@ -1,8 +1,8 @@
-/* File Name:
- * Course:
- * Project:
- * Author:
- * Description:
+/* File Name:	httpclient.hpp
+ * Course:	COP4635
+ * Project:	2
+ * Author:	Jeremy Caole Kevin Teague
+ * Description:	Header file for httpclient class
  */
 
 #ifndef HTTP_CLIENT_H_
@@ -12,44 +12,19 @@
 #include <stdlib.h>
 #include <string.h>
 #include <sys/socket.h>
+
+// used to convert ip address data to byte order
 #include <arpa/inet.h>
 #include <unistd.h>
 
 #define MAX_BUFF_SIZE 1024
-#define SERVER_PORT 80
+// port 80 doesnt work
+#define SERVER_PORT 60012
 
-void runHttpClient();
+void runHttpClient();		// runs client with for specidifed user params
 
-void setServerAddress();
+void setServerAddress();	
 
-int main();
+int main();			// main method for httpclient
 
 #endif /* HTTP_CLIENT_H_ */
-
-/*#include <iostream>
-#include <string.h>
-#include <sys/wait.h>
-#include <unistd.h>
-
-#include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
-#include <sys/socket.h>
-#include <netinet/in.h>
-#include <arpa/inet.h>
-#include <netdb.h>
-
-#define BUFFER_SIZE 1024
-#define PORT 80
-
-//#define SERVER_ADDRESS
-
-class HTTPClient {
-	private:
-		
-	public:
-		bool is_valid_ip_address(const char* ip_address);
-		void resolve_and_connect(char *hostname, char *filename);
-};
-#endif
-*/
